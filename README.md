@@ -1,6 +1,13 @@
 # vue-spa-tools
 
-> A Vue.js project
+> Vue.js と周辺ツールを使用した環境セット群
+
+## ブランチ構成
+
+- ready: 初期構成
+- router: vue-router を用いた構成
+
+
 
 ## テンプレートの用意の仕方
 
