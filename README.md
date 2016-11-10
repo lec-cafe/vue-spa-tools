@@ -4,28 +4,31 @@
 
 ## ブランチ構成
 
-- ready: 初期構成
-- router: vue-router を用いた構成
+### ready
 
-
-
-## テンプレートの用意の仕方
-
-[vue-cli](https://github.com/vuejs/vue-cli)を導入し、
+[vue-cli](https://github.com/vuejs/vue-cli) を利用して、
+webpack-simple テンプレートからファイルを生成した段階
 
 ````
 $ vue init webpack-simple myProject
+$ npm install
+$ npm i vue-router --save
 ````
 
-デフォルトのテンプレートインストール後、下記を実行します。
+### vue-loader
 
-``` bash
-# install dependencies
-$ npm install
+サンプルアプリケーション構成として3つのコンポーネントを追加した状態
 
-# add vue-router
-$ npm i vue-router --save
-```
+https://github.com/lec-cafe/vue-spa-tools/compare/ready...vue-loader
+
+### router
+
+vue-router を用いたSPA構成を追加した状態
+
+https://github.com/lec-cafe/vue-spa-tools/compare/vue-loader...router
+
+
+## 使い方
 
 開発中は下記コマンドで、ホットリロードを試すことが出来ます。
 
