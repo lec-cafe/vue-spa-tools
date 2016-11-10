@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <h1>{{ msg }}</h1>
-    <event-list page="1"></event-list>
-    <event-detail id="43665"></event-detail>
+    <app-header></app-header>
+    <event-guide></event-guide>
+    <event-list></event-list>
+    <event-detail></event-detail>
   </div>
 </template>
 
@@ -11,7 +12,6 @@ export default {
   name: "main",
   data () {
     return {
-      msg: 'Lec Cafe Event Guide',
       events: [],
     }
   },
@@ -32,7 +32,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  width: 480px;
+  margin: 2em auto;
+  /*margin-top: 60px;*/
 }
 
 h1, h2 {
@@ -45,11 +47,12 @@ ul {
 }
 
 li {
-  display: inline-block;
-  margin: 3px 10px;
+  display: block;
+  margin: .5em 1em;
 }
 
 a {
   color: #42b983;
+  cursor: pointer;
 }
 </style>

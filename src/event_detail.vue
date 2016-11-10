@@ -15,9 +15,10 @@
 <script>
     export default {
         name: "event-detail",
-        props:["id"],
         data () {
-            return {}
+            return {
+                id: 43665
+            }
         },
         computed:{
             event(){

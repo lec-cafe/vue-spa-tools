@@ -19,9 +19,10 @@
 <script>
     export default {
         name: "event-list",
-        props:["page"],
         data () {
-            return {}
+            return {
+                page: 1
+            }
         },
         computed:{
             events(){
