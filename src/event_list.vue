@@ -10,7 +10,7 @@
         </p>
         <ul>
             <li v-for="event in events">
-                <a :href="event.event_url">{{event.title}}</a>
+                <router-link :to="`/detail/${event.event_id}`">{{event.title}}</router-link>
             </li>
         </ul>
     </div>

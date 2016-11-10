@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <app-header></app-header>
-    <event-guide></event-guide>
-    <event-list></event-list>
-    <event-detail></event-detail>
+    <router-view></router-view>
   </div>
 </template>
 

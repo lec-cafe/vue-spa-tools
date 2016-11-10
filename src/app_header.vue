@@ -2,9 +2,9 @@
     <div>
         <h1>Lec Cafe Event Guide</h1>
         <p>
-            <a >GUIDE</a>
-            <a >LIST</a>
-            <a >DETAIL</a>
+            <router-link to="/guide">GUIDE</router-link>
+            <router-link to="/list">LIST</router-link>
+            <router-link to="/detail">LATEST</router-link>
         </p>
     </div>
 </template>
@@ -19,4 +19,8 @@
 </script>
 
 <style>
+    .router-link-active{
+        color: #307f5b;
+        font-weight: bold;
+    }
 </style>

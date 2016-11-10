@@ -17,7 +17,12 @@
         name: "event-detail",
         data () {
             return {
-                id: 43665
+                id: null
+            }
+        },
+        watch:{
+            "$route" (to,from){
+                this.id = to.params.id
             }
         },
         computed:{
@@ -27,8 +32,12 @@
                         return event
                     }
                 }
+                return this.$parent.events[0]
             }
         },
+        created(){
+            this.id = this.$route.params.id
+        }
 
     }
 </script>
