@@ -19,10 +19,8 @@ const router = new VueRouter({
     {path : "/",       redirect: "/list"},
   ]
 })
+
 Vue.component("app-header",AppHeader)
-// Vue.component("event-guide",EventGuide)
-// Vue.component("event-list",EventList)
-// Vue.component("event-detail",EventDetail)
 
 new Vue({
   el: '#app',
