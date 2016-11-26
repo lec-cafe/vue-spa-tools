@@ -27,12 +27,12 @@
         },
         computed:{
             event(){
-                for(event of this.$parent.events){
+                for(event of this.$store.state.events){
                     if(event.event_id == this.id){
                         return event
                     }
                 }
-                return this.$parent.events[0]
+                return this.$store.state.events[0]
             }
         },
         created(){

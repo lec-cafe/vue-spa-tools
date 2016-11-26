@@ -8,17 +8,8 @@
 <script>
 export default {
   name: "main",
-  data () {
-    return {
-      events: [],
-    }
-  },
   created(){
-    fetch("./api.json").then((response)=>{
-      return response.json()
-    }).then((json)=>{
-      this.events = json.events
-    })
+      this.$store.dispatch("load")
   }
 }
 </script>

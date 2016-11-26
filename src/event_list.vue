@@ -26,12 +26,12 @@
         },
         computed:{
             events(){
-                return this.$parent.events.slice(this.page*10-10,this.page*10)
+                return this.$store.state.events.slice(this.page*10-10,this.page*10)
             }
         },
         methods:{
             next(){
-                if(this.page < this.$parent.events.length / 10){
+                if(this.page < this.$store.state.events.length / 10){
                     this.page++;
                 }
             },
